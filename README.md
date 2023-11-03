@@ -12,7 +12,7 @@ For Orders under $50 cost $4.95.
 For orders under $90, delivery costs $2.95. Orders of $90
 or more have free delivery.
 
-> These rules are configured at `src/data/deliveryRules.ts`
+> These rules are configured at [`src/data/deliveryRules.ts`](https://github.com/hirenf14/plates-co-cart/blob/main/src/data/deliveryRules.ts#L1)
 
 ### Special Offer
 Our hot product, **Red Plate** has the special offer.
@@ -30,7 +30,7 @@ This discount will be offered for every 2nd plate only.
 Note: Above is applied only for "Red Plate", buying other plates doesn't provide you the discount.
 
 > It's calculated as special offer discount, for code, look into 
-```src/modules/cart/hooks/useCart.ts:12```
+[`src/modules/cart/hooks/useCart.ts:12`](https://github.com/hirenf14/plates-co-cart/blob/main/src/modules/cart/hooks/useCart.ts#L12)
 
 
 ## To Run the shop
