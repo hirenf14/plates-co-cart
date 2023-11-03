@@ -2,6 +2,7 @@
   "name": "plates-co-cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hirenf14.github.io/plates-co-cart",
   "author": {
     "name": "Hiren F",
     "email": "hirenf14@gmail.com",
@@ -25,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   },
   "devDependencies": {
     "daisyui": "^3.9.4",
+    "gh-pages": "^6.0.0",
     "tailwindcss": "^3.3.5"
   }
 }
