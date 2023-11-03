@@ -8,6 +8,7 @@ export default function ProductGrid() {
       {catalogue.map((plate) => (
         <PriceCard
           plate={plate}
+          key={plate.code}
           onQtyChange={(qty) => updateCart(plate.code, qty)}
         />
       ))}
