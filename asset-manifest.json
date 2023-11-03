@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/plates-co-cart/static/css/main.c9d9fbe2.css",
-    "main.js": "/plates-co-cart/static/js/main.942ef84e.js",
+    "main.js": "/plates-co-cart/static/js/main.4cc29dbc.js",
     "static/js/787.e2444fd0.chunk.js": "/plates-co-cart/static/js/787.e2444fd0.chunk.js",
     "index.html": "/plates-co-cart/index.html",
     "main.c9d9fbe2.css.map": "/plates-co-cart/static/css/main.c9d9fbe2.css.map",
-    "main.942ef84e.js.map": "/plates-co-cart/static/js/main.942ef84e.js.map",
+    "main.4cc29dbc.js.map": "/plates-co-cart/static/js/main.4cc29dbc.js.map",
     "787.e2444fd0.chunk.js.map": "/plates-co-cart/static/js/787.e2444fd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9d9fbe2.css",
-    "static/js/main.942ef84e.js"
+    "static/js/main.4cc29dbc.js"
   ]
 }
