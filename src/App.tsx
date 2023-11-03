@@ -1,6 +1,7 @@
 import React from "react";
 import ProductGrid from "./modules/products/ProductGrid";
 import ShopProvider from "./providers/ShopProvider";
+import Billing from "./modules/cart/Billing";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <ProductGrid />
         </div>
         <div className="divider lg:divider-horizontal"></div> 
-        <aside className="basis-1/4">test</aside>
+        <aside className="basis-1/4">
+          <Billing />
+        </aside>
       </section>
     </main>
     </ShopProvider>
