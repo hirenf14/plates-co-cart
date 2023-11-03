@@ -1,12 +1,14 @@
 import React from "react";
 import ProductGrid from "./modules/products/ProductGrid";
+import ShopProvider from "./providers/ShopProvider";
 
 function App() {
   return (
+    <ShopProvider>
     <main>
       <header className="bg-neutral text-neutral-content">
         <nav className="navbar max-w-screen-xl m-auto">
-          <a className="btn btn-ghost normal-case text-xl px-0">Plates Co</a>
+          <span className="btn btn-ghost normal-case text-xl px-0">Plates Co</span>
         </nav>
       </header>
       <section className="mt-2 flex max-w-screen-xl m-auto gap-4">
@@ -17,6 +19,7 @@ function App() {
         <aside className="basis-1/4">test</aside>
       </section>
     </main>
+    </ShopProvider>
   );
 }
 

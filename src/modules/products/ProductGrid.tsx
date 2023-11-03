@@ -1,14 +1,15 @@
-import * as React from "react";
-import plates from "../../data/plates";
 import PriceCard from "../../components/PriceCard";
+import { useShop } from "../../lib/useShop";
 
-export interface IProductGridProps {}
-
-export default function ProductGrid(props: IProductGridProps) {
+export default function ProductGrid() {
+  const { catalogue, updateCart } = useShop();
   return (
     <div className="grid grid-cols-3 gap-3">
-      {plates.map((plate) => (
-        <PriceCard plate={plate} />
+      {catalogue.map((plate) => (
+        <PriceCard
+          plate={plate}
+          onQtyChange={(qty) => updateCart(plate.code, qty)}
+        />
       ))}
     </div>
   );

@@ -1,32 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
-const QuantityInput: React.FC<any> = ({ onChange }) => {
-  const [quantity, setQuantity] = useState(0);
-
+const QuantityInput: React.FC<{
+  value: number;
+  onChange: (val: number) => void;
+}> = ({ value, onChange }) => {
   const increment = () => {
-      setQuantity(quantity + 1);
+    onChange(value + 1);
   };
 
   const decrement = () => {
-      setQuantity(quantity - 1);
+    onChange(value - 1);
   };
-
-  const handleChange = (event: any) => {
-    const value = parseInt(event.target.value, 10);
-    setQuantity(value);
-  };
-
   return (
     <div className="flex items-center justify-between">
-      <button className="btn btn-sm" disabled={!quantity} onClick={decrement}>
+      <button className="btn btn-sm" disabled={!value} onClick={decrement}>
         -
       </button>
-      <input
-        type="number"
-        value={quantity}
-        disabled
-        className="text-center"
-      />
+      <input type="number" value={value} disabled className="text-center" />
       <button className="btn btn-sm" onClick={increment}>
         +
       </button>
