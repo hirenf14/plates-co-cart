@@ -1,4 +1,4 @@
-import PriceCard from "../../components/PriceCard";
+import ProductCard from "./ProductCard";
 import { useShop } from "../../lib/useShop";
 
 export default function ProductGrid() {
@@ -6,10 +6,10 @@ export default function ProductGrid() {
   return (
     <div className="grid grid-cols-3 gap-3">
       {catalogue.map((plate) => (
-        <PriceCard
+        <ProductCard
           plate={plate}
           key={plate.code}
-          onQtyChange={(qty) => updateCart(plate.code, qty)}
+          onQtyChange={(qty: number) => updateCart(plate.code, qty)}
         />
       ))}
     </div>

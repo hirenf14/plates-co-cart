@@ -1,6 +1,6 @@
 import * as React from "react";
-import { IPlate } from "../data/plates";
-import QuantityInput from "./QuantityInput";
+import { IPlate } from "../../data/plates";
+import QuantityInput from "../../components/QuantityInput";
 
 export interface IPriceCardProps {
   plate: IPlate & { qty: number };
